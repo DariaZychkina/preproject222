@@ -5,5 +5,5 @@ import web.module.Car;
 import java.util.List;
 
 public interface CarService {
-    public List<Car> getPartOfCarsList(int countCars);
+    public List<Car> getCarsList();
 }

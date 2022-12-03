@@ -15,9 +15,11 @@ import java.util.List;
 
 @Controller
 public class CarsController {
+    @Autowired
+    private CarServiceImp carService;
     @GetMapping("/cars")
     public String getPartOfCarsList(@RequestParam(defaultValue = "5") int count, ModelMap model) {
-        List<Car> partOfList = new CarServiceImp().getCarsList();
+        List<Car> partOfList = carService.getCarsList();
         model.addAttribute("cars", partOfList.subList(0, count));
         return "cars";
     }

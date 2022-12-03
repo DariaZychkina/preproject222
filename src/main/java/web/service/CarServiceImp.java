@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import web.controller.CarsController;
 import web.dao.CarDaoImp;
 import web.module.Car;
-
 import java.util.List;
+
+@Component
 public class CarServiceImp implements CarService {
     @Override
     public List<Car> getCarsList() {

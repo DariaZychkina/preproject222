@@ -9,7 +9,7 @@ import web.dao.CarDaoImp;
 import web.module.Car;
 import java.util.List;
 
-@Component
+@Service
 public class CarServiceImp implements CarService {
     @Override
     public List<Car> getCarsList() {

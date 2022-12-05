@@ -5,6 +5,7 @@ import web.module.Car;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class CarDaoImp implements CarDao {
     @Override
     public List<Car> getListCars() {
